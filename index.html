@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <title>Home</title>
 </head>
 <body>
-    <nav class="nav-container">
+    <nav id="home" class="nav-container">
         <div class="nav-bg-container">
             <div class="nav-inner-container">
                 <div class="nav-bar">
                     <img class="edume-logo cursor-pointer" src="assets/LOGO.png" />
-                    <div>
-                        <img class="menu-btn cursor-pointer" src="assets/hamburger-menu.svg" />
+                    <div class="ham-menu-bg">
+                        <div id="menu-outline" class="menu-outline cursor-pointer">
+                            <img class="menu-btn" src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+                        </div>
                     </div>
                 </div> 
                 <div style="display: flex; flex-wrap:nowrap;justify-content: space-between;">
@@ -24,8 +27,8 @@
                         <span class="heading-text">enabled Education</span><br/><br/>
                         <span class="heading-subtext">Think, Creative, Innovate</span>
                         <div class="req-btn cursor-pointer">
-                            <span style="font-family: system-ui;
-                            color: blue;
+                            <span style="font-family: unineueBold;
+                            color: #596aff;
                             font-weight: 500;">Request course</span>
                         </div>
                     </div>
@@ -40,7 +43,7 @@
                         <span style="
                         color: white;
                         font-size: 24px;
-                        font-family: sans-serif;">
+                        font-family: unineueBold;">
                             We are the best at providing services in ...!
                         </span>
                     </div>
@@ -62,31 +65,61 @@
             </div>
         </div>
     </nav>
-    <section class="about-us">
+    <div id="sideNav">
+        <nav class="sideNav-bar">
+            <ul style="list-style:none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Featured Services</a></li>
+                <li><a href="./site_under_maintenance.html">Courses</a></li>
+                <li><a href="#events-section">Upcoming Event</a></li>
+                <li><a href="#ourFacilities">Our Facilities</a></li>
+                <li><a href="#getinTouch">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="about" class="about-us">
         <div class="about-us-wrapper">
             <div class="about-us-img">
                 <img src="assets/About_us.png" />
             </div>
             <div style="flex-grow: 3">
-                <div style="font-size: 19px;
+                <div style="font-family: unineueBold;
+                font-size: 19px;
                 margin-bottom: 7px;">About us</div>
-                <div style="font-size: 25px;
+                <div style="font-family: unineueHeavy;
+                font-size: 25px;
                 font-weight: bolder;
-                color: blue;">Welcome to Edueme</div><br/>
-                <p style="    text-align: left;
-                line-height: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ad quasi accusamus assumenda doloribus eaque sapiente distinctio culpa cumque esse, iusto officiis praesentium a consequatur odio totam iste, quo excepturi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga illo ipsam, nobis aperiam dolores molestias, itaque vitae eaque illum soluta corrupti quaerat debitis suscipit nam cupiditate quod accusamus nisi magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque eligendi rerum quis ex ea est debitis saepe maiores impedit cum ad repellat officia, distinctio hic perspiciatis vitae vel</p>
-                <div style="background-color: blue;" class="req-btn cursor-pointer">
-                    <span style="font-family: system-ui;
+                color: #2f56ff;">Welcome to Edueme</div><br/>
+                                <p style="font-family: unineueRegular;
+                                text-align: left;
+                                line-height: 22px;
+                                font-size: 12px;">The pace of technical development in the modern world is accelerating more quickly than before.Adaptation and the acquisition of new competencies and skills are crucial in this continuously changing world. All citizens—young and old—are impacted by the advancement of digital technology and the digitalization of society.</p>
+                                <p style="font-family: unineueRegular;
+                                text-align: left;
+                                line-height: 22px;
+                                font-size: 12px;">Everyday life is greatly influenced by the use of mobile phones, laptops, tablets, and other technologies that serve both social and entertainment purposes. For everyone to be able to engage the digital generation in the educational process, they must learn to adapt to a changing world and build their digital competencies.</p>
+                                <p style="font-family: unineueRegular;
+                                text-align: left;
+                                line-height: 22px;
+                                font-size: 12px;">Our future generation is now in need to learn about these machines to be future ready, same like in the past where Indian Schools between 1970 and 1990 used to have Occupational Courses for their students to be ready for 21st century. We at Edueme take extensive care of providing Work-Oriented learning opportunities to our students to make them ready for 2nd half of 21st century.</p>
+                                <p style="font-family: unineueRegular;
+                                text-align: left;
+                                line-height: 22px;
+                                font-size: 12px;">Our team includes research scientists, innovators, Physicists, who has extensive knowledge and rich experience in the areas of Robotics, Mechanical Design, Machine Learning, Artificial Intelligence. We are the first in India to introduce component based robotics from 3rd standard.</p>
+
+                <div style="background-color: #4e6fff;" class="req-btn cursor-pointer">
+                    <span style="font-family: unineueBold;
                     color: white;
-                    font-weight: 500;">Learn more</span>
+                    font-weight: 500;"><a style="text-decoration: none; color:white" href="./site_under_maintenance.html" target="_self">Learn more</a> </span>
                 </div>
             </div>
         </div>
     </section>
-    <div class="about-us-services-wrapper">
+    <div id="service" class="about-us-services-wrapper">
         <div class="about-us-services">
             <div class="service-header">
-                <span>Our Services</span>
+                <span style="font-family: unineueBold;">Our Services</span>
             </div>
             <div class="service-sub-header">
                 <span>Featured Services</span>
@@ -94,15 +127,17 @@
             <div class="service-img-section">
                 <div class="service-imgs">
                     <img src="assets/Teacher_Training_01.png" />
-                    <span class="service-text">Teaching Training</span>
+                    <span class="service-text">
+                        <a style="color:rgb(0, 0, 0)" href="./education_facilities_1.html" target="_self">Teacher Training</a> 
+                    </span>
                 </div>
                 <div class="service-imgs">
                     <img src="assets/Tech_Workshop.png" />
-                    <span class="service-text">Tech WorkShops</span>
+                    <span class="service-text"><a style="color:rgb(0, 0, 0)" href="./education_facilities_2.html" target="_self">Tech Workshops</a></span>
                 </div>
                 <div class="service-imgs">
                     <img src="assets/YearEnd_Program.png" />
-                    <span class="service-text">Year End Tech Program</span>
+                    <span class="service-text"><a style="color:rgb(0, 0, 0)" href="./education_facilities_3.html" target="_self">Year End Tech Programs</a></span>
                 </div>  
               </div>
         </div>
@@ -111,22 +146,22 @@
         <div class="details-section">
             <div class="enrolled">
                 <img src="assets/students-enrolled-icon.svg" />
-                <span>1000+</span><br/>
+                <span style="font-family: unineueHeavy;">1000+</span><br/>
                 <span class="details-text">Students Enrolled</span>
             </div>
             <div class="enrolled">
                 <img src="assets/course-enrolled icon.svg" />
-                <span >15+</span><br/>
+                <span style="font-family: unineueHeavy;">15+</span><br/>
                 <span class="details-text">Courses Uploaded</span>
             </div>
             <div style="border-right: none;" class="enrolled">
                 <img src="assets/students-certified-icon.svg" />
-                <span >1000+</span><br/>
+                <span style="font-family: unineueHeavy;">1000+</span><br/>
                 <span class="details-text">Students Certified</span>
             </div>
         </div>
     </div>
-    <section class="upcoming-events-section">
+    <section id="events-section" class="upcoming-events-section">
         <div class="up-text">
             <span>Upcoming Events</span>
         </div>
@@ -189,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <div class="events-div">
+            <!-- <div class="events-div">
                 <div class="event-details">
                     <span class="event-date">01</span><br/>
                     <span class="event-mnth">May</span>
@@ -245,8 +280,8 @@
                         </span>
                     </div>
                 </div>
-            </div>
-            <div class="events-div">
+            </div> -->
+            <!-- <div class="events-div">
                 <div class="event-details">
                     <span class="event-date">01</span><br/>
                     <span class="event-mnth">May</span>
@@ -302,13 +337,13 @@
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="events-all cursor-pointer">
             <a style="text-decoration:none" href="upcoming_events.html" ><span>View all Events</span></a>
         </div>
     </section>
-    <section class="facilities-section">
+    <section id="ourFacilities" class="facilities-section">
         <div class="heading">
             <span>
                 Our Facilities
@@ -321,7 +356,9 @@
                 </div>
                 <div class="global-cert-right">
                     <img src="assets/cert-img.png" /><br/>
-                    <span style="font-size: 25px;
+                    <span style="
+                    font-family: unineueHeavy;
+                    font-size: 25px;
                     font-weight: bold;
                     color: #3b4ffd">Global Certificate</span><br/>
                     <div class="fac-det">
@@ -329,14 +366,15 @@
                     </span>
                     </div>
                     <div class="know-more-btn cursor-pointer">
-                        Know more
+                       <a style="text-decoration: none; color:white" href="./site_under_maintenance.html" target="_self">Know more</a> 
                     </div>
                 </div>
             </div>
             <div class="training">
                 <div class="global-cert-right training-cert">
                     <img src="assets/training-icon.png" /><br/>
-                    <span style="font-size: 25px;
+                    <span style="
+                    font-family: unineueHeavy;font-size: 25px;
                     font-weight: bold;
                     color: #3b4ffd">Training Support</span><br/>
                     <div class="fac-det">
@@ -349,7 +387,7 @@
                         </span>
                     </div>
                     <div class="know-more-btn cursor-pointer">
-                        Know more
+                        <a style="text-decoration: none; color:white" href="./site_under_maintenance.html" target="_self">Know more</a> 
                     </div>
                 </div>
                 <div class="training-div">
@@ -362,15 +400,17 @@
                 </div>
                 <div class="global-cert-right">
                     <img src="assets/books-icon.png" /><br/>
-                    <span style="font-size: 25px;
+                    <span style="
+                    font-family: unineueHeavy;
+                    font-size: 25px;
                     font-weight: bold;
                     color: #3b4ffd">Books, Kits & Material</span><br/>
                     <div class="fac-det">
-                        <span>Materials and kits for teachers/students. Kit contains: Micro Controllers and driver boards, Sensors, Electronic Chips, Chassis and other needed materials. Software: Open source frameworks will be used. 
+                        <span>Materials and kits for teachers/students. Kit contains: Micro Controllers and driver boards, Sensors, Electronic Chips, Chassis and other needed materials. Software: Open source frameworks will be used.
                         </span>
                     </div>
                     <div class="know-more-btn cursor-pointer">
-                        Know more
+                        <a style="text-decoration: none; color:white" href="./site_under_maintenance.html" target="_self">Know more</a> 
                     </div>
                 </div>
             </div>
@@ -406,7 +446,7 @@
 
         </div>
     </section>
-    <section class="footer-section">
+    <section id="getinTouch" class="footer-section">
         <div class="footer-section-wrapper">
             <section class="touch-section">
                 <div class="getintouch-box">
@@ -476,19 +516,19 @@
                     <div>
                         <ul class="page-list">
                             <li>
-                                <a href="">Home</a>
+                                <a class="cursor-pointer" href="#home" >Home</a>
                             </li>
                             <li>
-                                <a href="">About us</a>
+                                <a class="cursor-pointer" href="#about" id="about-us">About us</a>
                             </li>
                             <li>
-                                <a href="">Courses</a>
+                                <a class="cursor-pointer" href="./site_under_maintenance.html">Courses</a>
                             </li>
                             <li>
-                                <a href="">News</a>
+                                <a class="cursor-pointer" href="./site_under_maintenance.html">News</a>
                             </li>
                             <li>
-                                <a href="">Event</a>
+                                <a class="cursor-pointer" href="#events-section">Events</a>
                             </li>
                         </ul>
                     </div>
@@ -497,19 +537,19 @@
                     <div>
                         <ul class="page-list">
                             <li>
-                                <a href="">Gallery</a>
+                                <a href="./site_under_maintenance.html">Gallery</a>
                             </li>
                             <li>
-                                <a href="">shop</a>
+                                <a href="./site_under_maintenance.html">shop</a>
                             </li>
                             <li>
-                                <a href="">Teachers</a>
+                                <a href="./site_under_maintenance.html">Teachers</a>
                             </li>
                             <li>
-                                <a href="">Support</a>
+                                <a href="./site_under_maintenance.html">Support</a>
                             </li>
                             <li>
-                                <a href="">Contact</a>
+                                <a href="./site_under_maintenance.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -521,19 +561,19 @@
                     <div>
                         <ul class="page-list">
                             <li>
-                                <a href="">FAQS</a>
+                                <a href="./upcoming_faq.html" target="_self">FAQS</a>
                             </li>
                             <li>
-                                <a href="">Privacy</a>
+                                <a href="./site_under_maintenance.html">Privacy</a>
                             </li>
                             <li>
-                                <a href="">Policy</a>
+                                <a href="./site_under_maintenance.html">Policy</a>
                             </li>
                             <li>
-                                <a href="">Support</a>
+                                <a href="./site_under_maintenance.html">Support</a>
                             </li>
                             <li>
-                                <a href="">Documentation</a>
+                                <a href="./site_under_maintenance.html">Documentation</a>
                             </li>
                         </ul>
                     </div>
@@ -541,5 +581,39 @@
             </div>
         </div>
     </section>
+    <script>
+
+        var menuBtn = document.getElementById("menu-outline")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        menuBtn.addEventListener('click',function() {
+            console.log("hello",sideNav.style.right)
+            if (sideNav.style.right == "0px") {
+                sideNav.style.right = "-400px";
+                menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+            } else {
+                sideNav.style.right = "0px";
+                menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+
+            }
+        });
+
+        $(document).ready(function() {
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+        </script>
 </body>
 </html>
